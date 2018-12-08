@@ -1,26 +1,22 @@
 
 
-
-// setup each variable and css elements that will be adjusted
-var randomNumber;
-var runningCount = 0;
-var gameStatus = "ongoing";
-
-// display the new random number in the random-number div
-var randomNumber = Math.floor(Math.random() * 120) + 19;
-
-// assign values to each crystal
-var crystal1 = Math.floor(Math.random() * 12) + 1;
-var crystal2 = Math.floor(Math.random() * 12) + 1;
-var crystal3 = Math.floor(Math.random() * 12) + 1;
-var crystal4 = Math.floor(Math.random() * 12) + 1;
-
 // don't run stuff until document ready
 $(document).ready(function() {
 
+    // setup each variable and css elements that will be adjusted
+    var randomNumber;
+    var runningCount = 0;
+    var gameStatus = "ongoing";
+    
+
+    // assign values to each crystal
+    var crystal1 = Math.floor(Math.random() * 12) + 1;
+    var crystal2 = Math.floor(Math.random() * 12) + 1;
+    var crystal3 = Math.floor(Math.random() * 12) + 1;
+    var crystal4 = Math.floor(Math.random() * 12) + 1;
+    
     // generate a random number between 19 and 120
     randomNumber = Math.floor(Math.random() * 120) + 19;
-
     $('div.magic-number').text(randomNumber);
 
     // assing crystal values to crystal divs
@@ -28,6 +24,34 @@ $(document).ready(function() {
     $('img.crystal2').val(crystal2);
     $('img.crystal3').val(crystal3);
     $('img.crystal4').val(crystal4);
+
+
+    function newGame() {
+        // assign values to each crystal
+        console.log('newgame');
+        crystal1 = Math.floor(Math.random() * 12) + 1;
+        console.log(crystal1);
+
+        crystal2 = Math.floor(Math.random() * 12) + 1;
+        crystal3 = Math.floor(Math.random() * 12) + 1;
+        crystal4 = Math.floor(Math.random() * 12) + 1;
+    
+        // display the new random number in the random-number div
+        randomNumber = Math.floor(Math.random() * 120) + 19;
+        $('div.magic-number').text(randomNumber);
+
+        // setup each variable and css elements that will be adjusted
+        runningCount = 0;
+        $('div.running-count').text(runningCount);
+        gameStatus = "ongoing";
+    };
+    
+
+    // setup a new game on button click
+    $("button.reset").on("click", function() {
+        newGame();
+    });
+
 
 
     // on cyrstal click add crystal value to runningCount
@@ -41,6 +65,7 @@ $(document).ready(function() {
             runningCount = runningCount + parseInt(clicked);
         };
 
+        // display the running count
         $('div.running-count').text(runningCount);
 
         // evaluate status of game
@@ -56,8 +81,7 @@ $(document).ready(function() {
             gameStatus = "win";
         };
     });
-
 });
 
-// setup a new game
+
 
