@@ -4,12 +4,11 @@
     <title>It's the amazing crystal game!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
 
   </head>
   <body>
@@ -20,29 +19,27 @@
     
 
     <div class="jumbotron">
-      <h1 class="display-3">Magic Numbers Game</h1>
+      <h1 class="display-3 hidden-sm">Magic Numbers Game</h1>
       <p class="lead">Click on a crystal. To Win, your clicks should add up to the Magic Number</p>
       <button class="reset">New Game</button>
-
     </div>
+
     <!-- Number you're trying to get, random -->
     <div class="container">
-      <div class="row">
+      <div class="row applygradient">
         <div class="col-sm-4">
           <h3>Your Magic Number is:</h3>
-          <div class="well magic-number"></div>
+          <div class="well magic-number text-center"></div>
         </div>
         <div class="col-sm-4">
           <h3>Your current count is:</h3>
-          <div class="well running-count"></div>
+          <div class="well running-count text-center"></div>
         </div>
         <div class="col-sm-4">
           <h3>Game Results:</h3>
-          <div class="well game-results">
             <h5>Wins: <div id="wins"></div></h5>
             <h5>Losses: <div id="losses"></div></h5>
           </div>
-        </div>
       </div>
       <hr>
       <div class="row">
@@ -51,17 +48,17 @@
         </div>
       </div>
       <div class="row padding">
-          <div class="col-sm-3">
-            <div><img src="#" id="" class="crystal crystal1" width="100%" value=""></div>
+          <div class="col-xs-3">
+            <div class="imageContainer"><img src="" id="" class="crystal crystal1" value="" width="100%"></div>
           </div>
-          <div class="col-sm-3">
-            <div><img src="#" id="" class="crystal crystal2" width="100%" value=""></div>
+          <div class="col-xs-3">
+            <div class="imageContainer"><img src="#" id="" class="crystal crystal2" value="" width="100%"></div>
           </div>
-          <div class="col-sm-3">
-            <div><img src="#" id="" class="crystal crystal3" width="100%" value=""></div>
+          <div class="col-xs-3">
+            <div class="imageContainer"><img src="#" id="" class="crystal crystal3" value="" width="100%"></div>
           </div>
-          <div class="col-sm-3">
-            <div><img src="#" id="" class="crystal crystal4" width="100%" value=""></div>
+          <div class="col-xs-3">
+            <div class="imageContainer"><img src="#" id="" class="crystal crystal4" value="" width="100%"></div>
           </div>
         </div>
       </div>
@@ -72,5 +69,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/gradient.js"></script>
   </body>
 </html>

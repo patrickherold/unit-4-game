@@ -1,3 +1,103 @@
+.imageContainer {
+    max-width: 100px;
+}
+
+
+.display-3, h3 {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.lead {
+    font-size: 1em;
+}
+
+.magic-number, .running-count {
+    font-size: 2em;
+    font-weight: 900;
+    padding: 10px;
+    margin: auto;
+}
+
+h5, .magic-number, #losses, #wins, .running-count {
+    color: white;
+}
+
+
+@media screen and (min-width: 576px) { 
+    .imageContainer {
+        max-width: 120px;
+    }
+
+    .display-3, h3 {
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    .lead {
+        font-size: 1em;
+    }
+
+ }
+
+
+@media screen and (min-width: 768px) { 
+    .imageContainer {
+        max-width: 180px;
+    }
+
+    .display-3 {
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .lead {
+        font-size: 1em;
+    }
+ }
+
+@media screen and (min-width: 992px) {     
+    .imageContainer {
+        max-width: 250px;
+}
+
+.display-3 {
+    font-size: 2.8em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+.lead {
+    font-size: 1.2em;
+}
+ }
+
+@media screen and (min-width: 1200px) { 
+    .imageContainer {
+        max-width: 300px;
+    }
+
+    .display-3 {
+        font-size: 3em;
+        font-weight: 200;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .lead {
+        font-size: 1.3em;
+    }
+ }
+
 .alert-primary {
     padding: 0px;
     margin: 0px;
@@ -17,7 +117,7 @@
 }
 
 .row.padding {
-    margin-top: 20px;
+    margin-top: 20px auto;
 }
 
 #wins, #losses {
@@ -51,4 +151,5 @@ img#spinOnce {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
