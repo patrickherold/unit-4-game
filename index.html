@@ -21,7 +21,7 @@
 
     <div class="jumbotron">
       <h1 class="display-3">Magic Numbers Game</h1>
-      <p class="lead">Choose crystals and get them to add up to the Magic Number</p>
+      <p class="lead">Click on a crystal. To Win, your clicks should add up to the Magic Number</p>
       <button class="reset">New Game</button>
 
     </div>
@@ -37,8 +37,11 @@
           <div class="well running-count"></div>
         </div>
         <div class="col-sm-4">
-          <h3>Games:</h3>
-          <div class="well game-results"></div>
+          <h3>Game Results:</h3>
+          <div class="well game-results">
+            <h5>Wins: <div id="wins"></div></h5>
+            <h5>Losses: <div id="losses"></div></h5>
+          </div>
         </div>
       </div>
       <hr>
@@ -47,18 +50,18 @@
           <h4>Click a crystal to guess a number:</h4>
         </div>
       </div>
-      <div class="row">
+      <div class="row padding">
           <div class="col-sm-3">
-            <div><img src="#" class="crystal crystal1" width="100%" value=""></div>
+            <div><img src="#" id="" class="crystal crystal1" width="100%" value=""></div>
           </div>
           <div class="col-sm-3">
-            <div><img src="#" class="crystal crystal2" width="100%" value=""></div>
+            <div><img src="#" id="" class="crystal crystal2" width="100%" value=""></div>
           </div>
           <div class="col-sm-3">
-            <div><img src="#" class="crystal crystal3" width="100%" value=""></div>
+            <div><img src="#" id="" class="crystal crystal3" width="100%" value=""></div>
           </div>
           <div class="col-sm-3">
-            <div><img src="#" class="crystal crystal4" width="100%" value=""></div>
+            <div><img src="#" id="" class="crystal crystal4" width="100%" value=""></div>
           </div>
         </div>
       </div>
