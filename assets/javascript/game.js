@@ -1,14 +1,14 @@
-    var imageArray = ['assets/images/crystal1.jpg', 'assets/images/crystal2.jpg', 'assets/images/crystal3.jpg', 'assets/images/crystal4.jpg', 'assets/images/crystal5.jpg', 'assets/images/crystal6.jpg', 'assets/images/crystal7.jpg', 'assets/images/crystal8.jpg', 'assets/images/crystal9.jpg', 'assets/images/crystal10.jpg', 'assets/images/crystal11.jpg'];
-       
-    // use this array to keep track of all the games. 
-    var wins = 0;
-    var losses = 0;
+var imageArray = ['assets/images/crystal1.jpg', 'assets/images/crystal2.jpg', 'assets/images/crystal3.jpg', 'assets/images/crystal4.jpg', 'assets/images/crystal5.jpg', 'assets/images/crystal6.jpg', 'assets/images/crystal7.jpg', 'assets/images/crystal8.jpg', 'assets/images/crystal9.jpg', 'assets/images/crystal10.jpg', 'assets/images/crystal11.jpg'];
+    
+// use this array to keep track of all the games. 
+var wins = 0;
+var losses = 0;
 
-    // setup each variable and css elements that will be adjusted
-    var randomNumber;
-    var runningCount = 0;
-    var gameStatus = "Keep going";
-    $('div.game-status').text("Game Ready");
+// setup each variable and css elements that will be adjusted
+var randomNumber;
+var runningCount = 0;
+var gameStatus = "Keep going";
+$('div.game-status').text("Game Ready");
 
     
 // don't run stuff until document ready
